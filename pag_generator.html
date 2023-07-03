@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Pagination Email Generator</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Pagination Email Generator</h1>
+    </header>
+
+    <main>
+      <section>
+        <p>Welcome to the Daily Bruin Pagination Email Generator.</p>
+        <p>Drafting a pagination email is the last thing anyone wants to do at 2 a.m. on a weekday. Let this site do it for you.</p>
+      </section>
+
+      <section>
+        <form method="POST" action="pag_generator.php">
+          <h2>Sender Email </h2>
+          <p>
+            <input type="text" name="sender_email">
+          </p>
+          <h2>Receiver Emails (comma separated) </h2>
+          <p>
+            <input type="text" name="receiver_emails">
+          </p>
+          <h2>Proofer Names </h2>
+          <p>
+            <input type="text" name="proofer_names">
+          </p>
+          <h2>Is it.. </h2>
+          <p>
+            <input type="radio" id="before_midnight" name="timecheck" value="Before 12">
+            <label for="before_midnight">Before 12</label><br>
+            <input type="radio" id="after_midnight" name="timecheck" value="After 12">
+            <label for="after_midnight">After 12</label><br>
+          </p>
+          <h2>A&E</h2>
+          <p>
+            <label for="Arts_start">Start: </label>
+            <input type="text" name="Arts_start">
+          </p>
+          <p>
+            <label for="Arts_end">End: </label>
+            <input type="text" name="Arts_end">
+          </p>
+
+          <h2>Op</h2>
+          <p>
+            <label for="Op_start">Start: </label>
+            <input type="text" name="Op_start">
+          </p>
+          <p>
+            <label for="Op_end">End: </label>
+            <input type="text" name="Op_end">
+          </p>
+
+          <h2>Sports</h2>
+          <p>
+            <label for="Sports_start">Start: </label>
+            <input type="text" name="Sports_start">
+          </p>
+          <p>
+            <label for="Sports_end">End: </label>
+            <input type="text" name="Sports_end">
+          </p>
+
+          <h2>News</h2>
+          <p>
+            <label for="News_start">Start: </label>
+            <input type="text" name="News_start">
+          </p>
+          <p>
+            <label for="News_end">End: </label>
+            <input type="text" name="News_end">
+          </p>
+
+          <h2>Fun Message (opt.) </h2>
+          <p>
+            <textarea name="message"></textarea>
+        </p>
+
+          <input type="submit" name="submit" value="Send">
+        </form>
+      </section>
+    
+    </main>
+
+    <footer>
+      <hr>
+      <small>
+        &copy; Kai Garcia, 2023
+      </small>
+    </footer>
+  </body>
+
+</html>
