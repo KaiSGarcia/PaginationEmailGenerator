@@ -2,7 +2,7 @@
 <?php
 // email addresses
 $sender = $_POST["sender_email"];
-$receivers = $_POST["receiever_emails"];
+$receivers = $_POST["receiver_emails"];
 
 // subject
 $proofer_names = "[" . $_POST["proofer_names"] . "]";
